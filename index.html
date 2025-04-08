@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="https://kit.fontawesome.com/a14ae32021.js" crossorigin="anonymous"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>It's For My Poplu</title>
+
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+
+</head>
+
+<body>
+
+<div id="mainDiv">
+	<div id="content">
+		<div id="code">
+			<span class="space"/><span class="comments">ভালোবাসি তোকে </span><br />
+			<span class="space"/><span class="comments"></span><br />
+			ওই সোনাই 🥺!<br />
+			মনে পরে সেই দিন টা যেদিন আমাদের প্রথম দেখা হয়েছিল,দ্বিতীয়বার এর জন্য ??<br />
+         <br>
+			<span class="comments">3rd July 2023. </span><br />
+			আড়াই বছর দেখা হওয়া দুজন মানুষ আবার নতুন ভাবে ভালোবাসতে শুরু করলাম দুজন দুজন 
+         কে <br />
+			<span class="comments">তোর সেই পিম্পল ভরা মুখ টা,স্ট্রেস এ কালি পরে যাওয়া চোখ টা, ওই মিষ্টি আওয়াজ টা, ওই ক্লাস ১০ এর ছেলেটা অগোছালো সৃজনী র প্রেমে পরে গেলো আবার <br />
+         <br>
+         সময় যত বেড়েছে 
+			বন্ধুত্বও প্রেম ভালোবাসা সবটাই বেড়েছে <br />
+			বেস্ট ফ্রেন্ড থেকে Mrs & Mr Deb<br />
+			,আমাদের এখনো অনেক টা পথ চলা বাকি সোনা;<br />
+         <br>
+         <br>
+			আমাদের মধ্যে ঝগড়া হয় এখন, রাগ অভিমান কথাকাটাকাটি হয়;<br />
+			<span class="comments">আর আমি নিশ্চিন্তও আমাদের সংসার টা Tom & Jerry র মতো , তাই সারাজীবন মারপিট করেও থেকে যেতে চাই তোর সাথে ,তোর কাছে
+         </span><br />
+			সব কিছুর শেষে Tom আর Jerry কেউ কাউকে ছাড়া থাকতে পারতোনা ,যতই সহ্য করতে না পারুক ,পারলে সব কিছুর জন্য ক্ষমা করে দিস আমায় 🥺,তোকে কোনোদিন কষ্ট দিতে চাইনি আমি 
+         <br />
+			<br>
+			<br>
+			একদিন এভাবেই একসাথে গাইতে চাই রাতে তোর কোলে মাথা রেখে🥺:
+         <br>
+         "এইটা তোমার গান
+         তুমি লোডশেডিং এ চাঁদের আলোর স্বর,
+         তুমি জ্বরের শেষে সূর্য ধোয়া ঘর।"<br />
+         <br>
+			বড্ড ভালোবাসি রে তোকে 🥺😭🤍<br />
+			<br>
+			<br>
+         ওপরের Timer টা কোনোদিন থামতে দিতে চাইনা রে
+         <br> 
+			এবারে দেখা হলে একবার এভাবে জড়িয়ে ধরবি প্লিজ, তাহলে নিচের হার্ট 🤍টা তে touch কর<br />
+			<br>
+			<span id="heartspan">
+			<a href="Our Image .jpg"><i class="fas fa-heart" id="icon"></i></a>
+			</span>
+		</div>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					Gullu & Pupu Forever
+					<div id="elapseClock"></div>
+				</div>
+				<div id="loveu">
+					I Love You Wifey <br/>
+					<div class="signature">- তোমার Addu</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2023, 7, 3);
+together.setHours(16);
+together.setMinutes(30);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+</body>
+</html>
